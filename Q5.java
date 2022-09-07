@@ -1,41 +1,22 @@
+import java.util.Scanner;
+
 public class Q5 {
     public static void main(String[] args) {
-        System.out.println("++++++++++++++++++");
-        System.out.println("|                |");
-        System.out.println("| Osama Alsabahi |");
-        System.out.println("|                |");
-        System.out.println("|________________|");
-        System.out.println();
 
-        // or
+        int x, y, z;
+        Scanner in =new Scanner(System.in);
+             System.out.print("input x:");
+                     x=in.nextInt();
 
-        for(int i=0;i<18;i++) {
-            System.out.print("+");
-        }
-        System.out.println();
-        System.out.print("|");
-        for(int i=0;i<16;i++) {
-            System.out.print(" ");
-        }
-        System.out.print("|");
-        System.out.println();
-        System.out.print("| ");
-        System.out.print("Osama Alsabahi");
-        System.out.print(" |");
-        System.out.println();
-        System.out.print("|");
-        for(int i=0;i<16;i++) {
-            System.out.print(" ");
-        }
-        System.out.print("|");
-        System.out.println();
-        System.out.print("|");
-        for(int i=0;i<16;i++) {
-            System.out.print("_");
-        }
-        System.out.print("|");
-        System.out.println();
+             System.out.print("input y:");
+                  y=in.nextInt();
+//_______________________________
+        z=x;
+        x=y;
+        y=z;
+
+        System.out.println("the value of x is :"+x);
+System.out.println("the value of x is :"+y);
+//________________________________________
     }
-
 }
-

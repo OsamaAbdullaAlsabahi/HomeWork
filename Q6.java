@@ -1,20 +1,14 @@
 public class Q6 {
-    /*
-  -5 + 8 * 6
-  (55+9) % 9
-  20 + -3*5 / 8
-  5 + 15 / 3 * 2 - 8 % 3
-  Expected Output :
-  43
-  1
-  19
-  13
-   */
     public static void main(String[] args) {
-        System.out.println(-5 + 8 * 6);
-        System.out.println((55+9) % 9);
-        System.out.println(20 + -3*5 / 8);
-        System.out.println(5 + 15 / 3 * 2 - 8 % 3);
+
+        String s = "Hello";
+        String t = "World";
+//_________________________________
+        System.out.println(s.length() + t.length());
+                  System.out.println(s.substring(1, 2));
+                           System.out.println(s.substring(s.length() / 2, s.length()));
+                 System.out.println(s + t);
+       System.out.println(t + s);
+//___________________________________
     }
 }
-

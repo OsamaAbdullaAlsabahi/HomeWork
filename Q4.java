@@ -1,13 +1,17 @@
+import java.util.Scanner;
+
 public class Q4 {
     public static void main(String[] args) {
-        float s=1000;
-        System.out.println("The Balance Of Your Account For Three Years With a 5% Interest In Every Year = ");
-        for(int i=1;i<=3;i++)
-        {  s+=(s*.05);
-            System.out.println("The Balance Of Your Account After The ["+i+"]Year="+s+"$");
-        }
-
+    double a, x, y, z;
+        Scanner in =new Scanner(System.in);
+        System.out.println("input three number:");
+             x=in.nextDouble();
+                 y=in.nextDouble();
+                       z=in.nextDouble();
+//________________________________
+   a = (x + y + z)/3;
+        System.out.println("the average :"+a);
+//________________________________
     }
+
 }
-
-

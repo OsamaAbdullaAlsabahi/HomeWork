@@ -1,15 +1,23 @@
+import java.util.Scanner;
+
 public class Q3 {
+
     public static void main(String[] args) {
-        int i;
-        int x[]={1,2,3,4,5,6,7,8,9,10};
-        int  product=1;
-        for(i=0;i<10;i++)
-            product = product * x[i];
 
+        double x, y, w, l;    //x:محيط المستطيل     y:مساحة المستطيل
+        final double bay =13.4;
+        Scanner in =new Scanner(System.in);
+            System.out.println("input the width:");
+                 w=in.nextDouble();
 
-        System.out.print(" the  product is:");
-        System.out.print(  product );
+   System.out.println("input the height:");
+        l=in.nextDouble();
+//_________________________________
+    x =2*(w+l);
+        System.out.println("x ="+x);
+    y =w*l;
+        System.out.println("y ="+y);
+//________________________________________
     }
 
 }
-
