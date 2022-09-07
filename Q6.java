@@ -1,14 +1,22 @@
+import java.util.Scanner;
+
 public class Q6 {
     public static void main(String[] args) {
 
-        String s = "Hello";
-        String t = "World";
-//_________________________________
-        System.out.println(s.length() + t.length());
-                  System.out.println(s.substring(1, 2));
-                           System.out.println(s.substring(s.length() / 2, s.length()));
-                 System.out.println(s + t);
-       System.out.println(t + s);
-//___________________________________
+        Scanner in = new Scanner(System.in);
+        System.out.println("input three number:");
+        int x = in.nextInt();
+        int y = in.nextInt();
+        int z = in.nextInt();
+
+        System.out.println("----------------");
+        if (x<y & y<z) System.out.println("|  increasing  |");
+            else if (x>y & y>z) System.out.println("|  decreasing  |");
+        else System.out.println("|   neither    |");
+
+        System.out.println("----------------");
+
+
     }
+
 }

@@ -3,20 +3,18 @@ import java.util.Scanner;
 public class Q5 {
     public static void main(String[] args) {
 
-        int x, y, z;
-        Scanner in =new Scanner(System.in);
-             System.out.print("input x:");
-                     x=in.nextInt();
+        Scanner in = new Scanner(System.in);
+        System.out.println("input three number:");
+        int x = in.nextInt();
+        int y = in.nextInt();
+        int z = in.nextInt();
 
-             System.out.print("input y:");
-                  y=in.nextInt();
-//_______________________________
-        z=x;
-        x=y;
-        y=z;
+        System.out.println("----------------");
+        if (x==y & x==z) System.out.println("| all the same |");
+            else if (x!=y & x!=z) System.out.println("| all different|");
+        else System.out.println("|   neither    |");
 
-        System.out.println("the value of x is :"+x);
-System.out.println("the value of x is :"+y);
-//________________________________________
+        System.out.println("----------------");
     }
+
 }

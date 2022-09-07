@@ -2,16 +2,25 @@ import java.util.Scanner;
 
 public class Q4 {
     public static void main(String[] args) {
-    double a, x, y, z;
-        Scanner in =new Scanner(System.in);
-        System.out.println("input three number:");
-             x=in.nextDouble();
-                 y=in.nextDouble();
-                       z=in.nextDouble();
-//________________________________
-   a = (x + y + z)/3;
-        System.out.println("the average :"+a);
-//________________________________
+
+        Scanner in = new Scanner(System.in);
+        System.out.println("input the num");
+        long x = in.nextLong();
+        if (x<0){x*=-1;}
+
+        System.out.print("the number of digits contains(");
+        if (x<10) System.out.println(x+"):1");
+            else if (x<100) System.out.println(x+"):2");
+                 else if (x<1000) System.out.println(x+"):3");
+                     else if (x<10000) System.out.println(x+"):4");
+                     else if (x<100000) System.out.println(x+"):5");
+                else if (x<1000000) System.out.println(x+"):6");
+                 else if (x<10000000) System.out.println(x+"):7");
+             else if (x<100000000) System.out.println(x+"):8");
+       else if (x<1000000000) System.out.println(x+"):9");
+ //       if (x<10000000000) System.out.println(x+"):10");
+
+
     }
 
 }
