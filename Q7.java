@@ -1,22 +1,18 @@
-import java.util.Scanner;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.Graphics;
+public class Q7 extends JComponent{
+    public void paintComponent (Graphics g)
+    {
+        Rectangle r= new Rectangle(80,100,100,300);
+        Graphics2D g2 = (Graphics2D) g;
 
-public class Q7 {
-    public static void main(String[] args) {
-
-        Scanner in = new Scanner(System.in);
-        System.out.println("input three number:");
-        int x = in.nextInt();
-        int y = in.nextInt();
-        int z = in.nextInt();
-
-        System.out.println("----------------");
-if (x<y & y<z) System.out.println("("+x+" "+y+" "+z+") in order");
-else if (x>y & y>z) System.out.println("("+x+" "+y+" "+z+") in order");
-else System.out.println("("+x+" "+y+" "+z+") not in order ");
-
-        System.out.println("----------------");
+        g2.setColor(Color.pink);
+        g2.fillRect(50 ,100 ,100 ,50);
 
 
+        g2.setColor(Color.magenta);
+        g2.fillRect(130 ,155 ,100 ,50);
 
     }
 

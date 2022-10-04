@@ -1,13 +1,13 @@
-import java.util.Scanner;
-
 public class Q3 {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.println("input the num");
-        int x = in.nextInt();
-        if (x>0) System.out.println(x+" positive");
-        else if (x<0)System.out.println(x+" negative");
-        else System.out.println(x+" this zero");
+
+        String x = new String("Mississippi");
+        x = x.replace("i", "!");
+        x = x.replace("s", "$");
+
+        System.out.println(x);
+        System.out.println("Expected result: " + "M!$$!$$!pp!");
+
     }
 
-}
+    }
